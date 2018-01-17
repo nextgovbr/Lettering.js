@@ -1,4 +1,4 @@
-/*global jQuery */
+*global jQuery */
 /*!
 * Lettering.JS 0.7.0
 *
@@ -17,7 +17,7 @@
 		, inject = '';
 		if (a.length) {
 			$(a).each(function(i, item) {
-				inject += '<span class="'+klass+(i+1)+'" aria-hidden="true">'+item+'</span>'+after;
+				inject += item+after;
 			});
 			t.attr('aria-label',text)
 			.empty()
